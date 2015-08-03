@@ -1,12 +1,13 @@
 package com.sanguo.youzan.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * t_trade 实体类 Mon Aug 03 22:05:57 CST 2015 JasonLin
  */
 
-public class T_trade {
+public class T_trade implements Serializable{
 	private String tid;
 	private int num;
 	private int num_iid;

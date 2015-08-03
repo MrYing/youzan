@@ -1,5 +1,6 @@
 package com.sanguo.youzan.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
    /**
@@ -8,7 +9,7 @@ import java.util.Date;
     */ 
 
 
-public class T_order{
+public class T_order implements Serializable{
 	private int oid;
 	private int num_iid;
 	private int sku_id;

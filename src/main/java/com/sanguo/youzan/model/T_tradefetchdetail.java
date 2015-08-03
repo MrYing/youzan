@@ -1,12 +1,13 @@
 package com.sanguo.youzan.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * t_tradefetchdetail 实体类 Mon Aug 03 22:06:09 CST 2015 JasonLin
  */
 
-public class T_tradefetchdetail {
+public class T_tradefetchdetail implements Serializable {
 	private String fetcher_id;
 	private String fetcher_name;
 	private String fetcher_mobile;
