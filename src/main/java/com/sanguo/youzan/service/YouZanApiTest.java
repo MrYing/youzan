@@ -8,11 +8,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-
 import net.sf.json.JSONObject;
-
 import org.apache.http.HttpResponse;
-
 import com.sanguo.youzan.api.KdtApiClient;
 import com.sanguo.youzan.util.JsonDataUtil;
 
