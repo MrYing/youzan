@@ -5,9 +5,9 @@
 	version="3.0">
 	<display-name>Archetype Created Web Application</display-name>
 	 
-	<!-- 全局bean -->
+	<!-- 全局bean-->
 	<context-param>
-		<!--rest配置文件的路径，貌似不配置也是加载这个地址，这个地方有点疑问，大家指点指点 -->
+		<!-- rest配置文件的路径，貌似不配置也是加载这个地址，这个地方有点疑问，大家指点指点 -->
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring-servlet.xml</param-value>
 	</context-param>
@@ -32,14 +32,14 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 
-	<filter>    
+	<!-- <filter>    
 	  <filter-name>UsersFilter</filter-name>    
 	  <filter-class>com.sanguo.youzan.common.filter.UserFilter</filter-class>    
 	 </filter>    
 	 <filter-mapping>    
 	  <filter-name>UsersFilter</filter-name>    
 	  <url-pattern>/printsystem/*</url-pattern>    
-	 </filter-mapping>
+	 </filter-mapping> -->
 	 <welcome-file-list>
        <welcome-file>index.jsp</welcome-file>
      </welcome-file-list>

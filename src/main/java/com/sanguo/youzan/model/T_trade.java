@@ -2,13 +2,21 @@ package com.sanguo.youzan.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * t_trade 实体类 Mon Aug 03 22:05:57 CST 2015 JasonLin
  */
 
 public class T_trade implements Serializable{
+	/**
+	 * @param
+	 * @return
+	 * @throws 
+	 */
+	private static final long serialVersionUID = 7152432753833309424L;
 	private String tid;
+	private String tradeNum;
 	private int num;
 	private int num_iid;
 	private double price;
@@ -48,6 +56,7 @@ public class T_trade implements Serializable{
 	private Date sign_time;
 	private String buyer_area;
 	private String orders_oid;
+	private List<T_order> T_orderList;
 	private String fetch_detail_id;
 	private String coupon_details_id;
 	private String promotion_details_id;
@@ -413,4 +422,19 @@ public class T_trade implements Serializable{
 	public String getSub_trades_id() {
 		return sub_trades_id;
 	}
+	public List<T_order> getT_orderList() {
+		return this.T_orderList;
+	}
+
+	public void setT_orderList(List<T_order> t_orderList) {
+		this.T_orderList = t_orderList;
+	}
+	public String getTradeNum() {
+		return this.tradeNum;
+	}
+
+	public void setTradeNum(String tradeNum) {
+		this.tradeNum = tradeNum;
+	}
+
 }

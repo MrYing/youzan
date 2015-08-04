@@ -47,7 +47,7 @@ public class LoginController {
             	System.out.println(URLDecoder.decode(redirectURL));
                 return "redirect:" + URLDecoder.decode(redirectURL);
             }
-            return "/printPage";
+            return "/admin/main";
         } else {
             if (StringUtils.isNotBlank(redirectURL)) {
                 return "redirect:/login.jsp" + URLDecoder.decode(redirectURL);
