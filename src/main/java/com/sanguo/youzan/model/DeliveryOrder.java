@@ -8,7 +8,7 @@ public class DeliveryOrder {
     private String receiverName;
     private String receiverPhone;
     private String receiverAddress;
-    private Date orderTime;
+    private String orderTime;
     private String tid;
     private Double totalFee;
     private Double payment;
@@ -40,10 +40,10 @@ public class DeliveryOrder {
 	public void setReceiverAddress(String receiverAddress) {
 		this.receiverAddress = receiverAddress;
 	}
-	public Date getOrderTime() {
+	public String getOrderTime() {
 		return this.orderTime;
 	}
-	public void setOrderTime(Date orderTime) {
+	public void setOrderTime(String orderTime) {
 		this.orderTime = orderTime;
 	}
 	public String getTid() {
